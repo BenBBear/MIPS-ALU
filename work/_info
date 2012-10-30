@@ -3,23 +3,120 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\dredfern\Documents\ModelSimProjects\registers
-vbitSlice_1bit
+vadd_1bit
+Z1 !s100 Gi7MNbMlOOm5f;>8M8dSH3
+Z2 IY13h;gX76FDE`c:Wb?`<90
+Z3 VHL3][>M23iMfIm_[o<aPV0
+Z4 dC:\Users\dredfern\Documents\GitHub\MIPS-ALU
+Z5 w1351576682
+Z6 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v
+Z7 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v
+L0 9
+Z8 OP;L;10.1c;51
+r1
+31
+Z9 !s108 1351608951.676000
+Z10 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v|
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v|
+Z12 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
 !i10b 1
-!s100 ?YnUM:n<<WRbfXcifOzoh1
-I4I]hm@CaZ5d[CkU1XIHL?0
-V`<:^cL3zF`d02jNQ0PTAS2
-dC:\Users\ihoover\Documents\GitHub\MIPS-ALU
-w1351557507
-8C:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v
-FC:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v
+!s85 0
+!s101 -O0
+vbitSlice_1bit
+Z13 !s100 czU`Jo8RQ1n5Q]l97N91P1
+Z14 ISWFGMOl^A001TZ]GzhGSe3
+Z15 V`<:^cL3zF`d02jNQ0PTAS2
+R4
+Z16 w1351576756
+Z17 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v
+Z18 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v
 L0 1
-Z1 OP;L;10.1c;51
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v|
+R12
+Z20 nbit@slice_1bit
+!i10b 1
+!s85 0
+Z21 !s108 1351608952.324000
+Z22 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v|
+!s101 -O0
+vnot_31bit
+Z23 IPIM6UPhGI^2dHO<^O4Cc41
+Z24 VlTh3@05a=jmOA;?E<][Ve1
+R4
+Z25 w1351577554
+Z26 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v
+Z27 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v
+L0 3
+R8
+r1
+31
+Z28 !s108 1351577559.512000
+Z29 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v|
+Z30 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v|
+R12
+Z31 !s100 <BzDXkU3EzD8n4W8DnNBR0
+!i10b 1
+!s85 0
+!s101 -O0
+vnot_32bit
+!i10b 1
+!s100 SUT95_8T5_1XV@A:C7=4^1
+IbY;_0VBb49V0j`oW6F46Q1
+V8hLPNJ1<7oRc0bg4YAFnH0
+R4
+Z32 w1351608954
+R26
+R27
+L0 3
+R8
 r1
 !s85 0
 31
-!s108 1351557507.735000
-!s107 C:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v|
-!s90 -reportprogress|300|-work|work|C:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v|
+Z33 !s108 1351608954.677000
+Z34 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v|
+R30
 !s101 -O0
-o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
-nbit@slice_1bit
+R12
+vTESTadd_1bit
+Z35 !s100 D3Ai6dBE3ETed7NJY>Dd82
+Z36 I2QFekI7L;d7EObDF0nO9I3
+Z37 V8Ue<RdIgl]KL?>;9Y`2MB1
+R4
+R5
+R6
+R7
+L0 21
+R8
+r1
+31
+R9
+R10
+R11
+R12
+Z38 n@t@e@s@tadd_1bit
+!i10b 1
+!s85 0
+!s101 -O0
+vTESTnot_32bit
+!i10b 1
+!s100 7bm`mJR2Q05XknO4Vbh6J1
+ILfm8UPa3DCLV8:EMN6ReI0
+Z39 Vn8gFAk9bZCzR6g7jWPZPW1
+R4
+R32
+R26
+R27
+L0 41
+R8
+r1
+!s85 0
+31
+R33
+R34
+R30
+!s101 -O0
+R12
+Z40 n@t@e@s@tnot_32bit
