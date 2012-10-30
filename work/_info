@@ -4,158 +4,158 @@ K3
 cModel Technology
 Z0 dC:\Users\dredfern\Documents\ModelSimProjects\registers
 vadd_1bit
-Z1 !s100 Gi7MNbMlOOm5f;>8M8dSH3
-Z2 IY13h;gX76FDE`c:Wb?`<90
-Z3 VHL3][>M23iMfIm_[o<aPV0
-Z4 dC:\Users\dredfern\Documents\GitHub\MIPS-ALU
-Z5 w1351576682
-Z6 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v
-Z7 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v
+Z1 I4]ehL<[gPlD=K00Od1;Cl2
+Z2 Vm^zL8H15Mbhe>M2=GVkjm0
+Z3 dC:\Users\dredfern\Documents\GitHub\MIPS-ALU
+Z4 w1351611079
+Z5 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v
+Z6 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v
 L0 9
-Z8 OP;L;10.1c;51
+Z7 OP;L;10.1c;51
 r1
 31
-Z9 !s108 1351610360.008000
-Z10 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v|
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v|
-Z12 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
+Z8 !s108 1351612687.848000
+Z9 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v|
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v|
+Z11 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
+Z12 !s100 klC>>0QAcLFe:BbMFQ>Tf1
 !i10b 1
 !s85 0
 !s101 -O0
 vbitSlice_1bit
-Z13 !s100 czU`Jo8RQ1n5Q]l97N91P1
-Z14 ISWFGMOl^A001TZ]GzhGSe3
-Z15 V`<:^cL3zF`d02jNQ0PTAS2
-R4
-Z16 w1351576756
-Z17 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v
-Z18 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v
-L0 1
-R8
+Z13 Izifl5:F5:[<SDeTah0fQE1
+Z14 VN;5jd3alG?>oL>Fkg@SVf1
+R3
+Z15 w1351612672
+Z16 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v
+Z17 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v
+L0 4
+R7
 r1
 31
-Z19 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v|
-R12
-Z20 nbit@slice_1bit
-Z21 !s108 1351610360.438000
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v|
+R11
+Z19 nbit@slice_1bit
+Z20 !s100 3ka2S>[I`YXe[4dEiUV@k2
+Z21 !s108 1351612688.182000
 Z22 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmux_5bit
 !i10b 1
-Z23 !s100 5K5C[mj]UR8d3ZcOFEU_Y3
-Z24 I5YP[W6TSi`I]XNmG30_8a3
-Z25 VR:7hj_g9g81I<DKfd[MoM0
-R4
-Z26 w1351610358
-Z27 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v
-Z28 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v
-L0 8
-R8
+!s100 W7Kn5FSME4hLFO8]bIzID1
+I:_oH^aoZ5?A[2z>]Om`2Z0
+Z23 VR:7hj_g9g81I<DKfd[MoM0
+R3
+Z24 w1351610635
+Z25 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v
+Z26 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v
+L0 9
+R7
 r1
 !s85 0
 31
-Z29 !s108 1351610366.553000
-Z30 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v|
-Z31 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v|
+Z27 !s108 1351612688.684000
+Z28 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v|
+Z29 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/mux_5bit.v|
 !s101 -O0
-R12
+R11
 vnot_31bit
-Z32 IPIM6UPhGI^2dHO<^O4Cc41
-Z33 VlTh3@05a=jmOA;?E<][Ve1
-R4
-Z34 w1351577554
-Z35 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v
-Z36 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v
+Z30 IPIM6UPhGI^2dHO<^O4Cc41
+Z31 VlTh3@05a=jmOA;?E<][Ve1
+R3
+Z32 w1351577554
+Z33 8C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v
+Z34 FC:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v
 L0 3
-R8
+R7
 r1
 31
-Z37 !s108 1351577559.512000
-Z38 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v|
-Z39 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v|
-R12
-Z40 !s100 <BzDXkU3EzD8n4W8DnNBR0
+Z35 !s108 1351577559.512000
+Z36 !s107 C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v|
+Z37 !s90 -reportprogress|300|-work|work|C:/Users/dredfern/Documents/GitHub/MIPS-ALU/not_32bit.v|
+R11
+Z38 !s100 <BzDXkU3EzD8n4W8DnNBR0
 !i10b 1
 !s85 0
 !s101 -O0
 vnot_32bit
-Z41 !s100 SUT95_8T5_1XV@A:C7=4^1
-Z42 IbY;_0VBb49V0j`oW6F46Q1
-Z43 V8hLPNJ1<7oRc0bg4YAFnH0
-R4
-Z44 w1351608954
-R35
-R36
+Z39 !s100 SUT95_8T5_1XV@A:C7=4^1
+Z40 IbY;_0VBb49V0j`oW6F46Q1
+Z41 V8hLPNJ1<7oRc0bg4YAFnH0
+R3
+Z42 w1351608954
+R33
+R34
 L0 3
-R8
+R7
 r1
 31
-Z45 !s108 1351610360.619000
-R38
-R39
-R12
+Z43 !s108 1351612688.407000
+R36
+R37
+R11
 !i10b 1
 !s85 0
 !s101 -O0
 vTESTadd_1bit
-Z46 !s100 D3Ai6dBE3ETed7NJY>Dd82
-Z47 I2QFekI7L;d7EObDF0nO9I3
-Z48 V8Ue<RdIgl]KL?>;9Y`2MB1
+Z44 IO86Q<PGO]F?AjkHRkOSEY0
+Z45 V8Ue<RdIgl]KL?>;9Y`2MB1
+R3
 R4
 R5
 R6
-R7
 L0 21
-R8
+R7
 r1
 31
+R8
 R9
 R10
 R11
-R12
-Z49 n@t@e@s@tadd_1bit
+Z46 n@t@e@s@tadd_1bit
+Z47 !s100 jUjNYNo<Z1]G5jY6@GZEb0
 !i10b 1
 !s85 0
 !s101 -O0
 vTESTmux_5bit
 !i10b 1
-!s100 O1;63e2Nok8>kR40;`8`z0
-I9=7aLToWYZa=FfJYR`YjY2
-Z50 Vno6X10NVFdK<KYdPgX[ga3
-R4
+!s100 >ACM@<SI:KjmTlj`d1i;k0
+IFRX4ncz:TT62XhEP8zBoe2
+Z48 Vno6X10NVFdK<KYdPgX[ga3
+R3
+R24
+R25
 R26
-R27
-R28
-L0 24
-R8
+L0 25
+R7
 r1
 !s85 0
 31
+R27
+R28
 R29
-R30
-R31
 !s101 -O0
-R12
-Z51 n@t@e@s@tmux_5bit
+R11
+Z49 n@t@e@s@tmux_5bit
 vTESTnot_32bit
-Z52 !s100 7bm`mJR2Q05XknO4Vbh6J1
-Z53 ILfm8UPa3DCLV8:EMN6ReI0
-Z54 Vn8gFAk9bZCzR6g7jWPZPW1
-R4
-R44
-R35
-R36
+Z50 !s100 7bm`mJR2Q05XknO4Vbh6J1
+Z51 ILfm8UPa3DCLV8:EMN6ReI0
+Z52 Vn8gFAk9bZCzR6g7jWPZPW1
+R3
+R42
+R33
+R34
 L0 41
-R8
+R7
 r1
 31
-R45
-R38
-R39
-R12
-Z55 n@t@e@s@tnot_32bit
+R43
+R36
+R37
+R11
+Z53 n@t@e@s@tnot_32bit
 !i10b 1
 !s85 0
 !s101 -O0

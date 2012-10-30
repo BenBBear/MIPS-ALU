@@ -6,6 +6,7 @@ entity bitSlice_1bit is
         Cout            : out    vl_logic;
         A               : in     vl_logic;
         B               : in     vl_logic;
+        negB            : in     vl_logic;
         Cin             : in     vl_logic;
         Cntrl           : in     vl_logic_vector(2 downto 0)
     );

@@ -6,21 +6,6 @@ Model Technology ModelSim PE Student Edition vlog 10.1c Compiler 2012.07 Jul 28 
 Top level modules:
 	TESTnot_32bit
 
-} {} {}} C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v {1 {vlog -work work C:/Users/dredfern/Documents/GitHub/MIPS-ALU/add_1bit.v
-Model Technology ModelSim PE Student Edition vlog 10.1c Compiler 2012.07 Jul 28 2012
--- Compiling module add_1bit
--- Compiling module TESTadd_1bit
-
-Top level modules:
-	TESTadd_1bit
-
-} {} {}} C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v {1 {vlog -work work C:/Users/dredfern/Documents/GitHub/MIPS-ALU/bitSlice_1bit.v
-Model Technology ModelSim PE Student Edition vlog 10.1c Compiler 2012.07 Jul 28 2012
--- Compiling module bitSlice_1bit
-
-Top level modules:
-	bitSlice_1bit
-
 } {} {}} C:/Users/dredfern/Documents/GitHub/MIPS-ALU/alu.v {1 {vlog -work work C:/Users/dredfern/Documents/GitHub/MIPS-ALU/alu.v
 Model Technology ModelSim PE Student Edition vlog 10.1c Compiler 2012.07 Jul 28 2012
 
