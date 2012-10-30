@@ -2,4 +2,24 @@ m255
 K3
 13
 cModel Technology
-dC:\Users\dredfern\Documents\ModelSimProjects\registers
+Z0 dC:\Users\dredfern\Documents\ModelSimProjects\registers
+vbitSlice_1bit
+!i10b 1
+!s100 ?YnUM:n<<WRbfXcifOzoh1
+I4I]hm@CaZ5d[CkU1XIHL?0
+V`<:^cL3zF`d02jNQ0PTAS2
+dC:\Users\ihoover\Documents\GitHub\MIPS-ALU
+w1351557507
+8C:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v
+FC:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v
+L0 1
+Z1 OP;L;10.1c;51
+r1
+!s85 0
+31
+!s108 1351557507.735000
+!s107 C:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v|
+!s90 -reportprogress|300|-work|work|C:\Users\ihoover\Documents\GitHub\MIPS-ALU\bitSlice_1bit.v|
+!s101 -O0
+o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -O0
+nbit@slice_1bit
