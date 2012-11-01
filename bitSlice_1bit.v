@@ -10,15 +10,32 @@ module bitSlice_1bit (Out, Cout, A, B, Cin,Cntrl);
   input [2:0] Cntrl;
   output Out, Cout;
   
-  wire Xor, Add, Sub, Slt, Mul, notB;
+  wire Xor, Sum, Slt, Mul, Bin; //Bin is the value fed to the adder (B or not(B))
   
-  `NOT notBgate(notB,B);
+  `XOR subBgate(Bin,B,Cntrl[0]);
   
-  add_1bit add(Add,Cout,A,B,Cin);
-  add_1bit sub(Sub,Cout,A,negB,Cin);
+  add_1bit addOrSub(Sum,Cout,A,Bin,Cin);
 
   `XOR xorGate(Xor,A,B);
   
   mux_5bit finalMux(Out,Add,Sub,Xor,Slt,Mul,Cntrl[0],Cntrl[1],Cntrl[2]);
   
+endmodule
+
+module TESTbitSlice_1bit;
+  reg A,B,cIn;
+  reg [2:0] Cntrl;
+  wire out,cOut;
+  
+  //test 1 bit adder
+  initial  // Stimulus 
+  begin
+    A=1;B=1;cIn=0; Cntrl = 0;
+    #150 A=0; 
+    #150 cIn=1;
+    #150 A=1; 
+  end
+  bitSlice_1bit UUT (out,cOut,A,B,cIn,Cntrl); 
+  initial  // Response 
+    $monitor($time,out,cOut,A,B,cIn);
 endmodule
