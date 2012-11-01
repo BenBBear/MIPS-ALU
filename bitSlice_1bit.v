@@ -5,14 +5,12 @@
 `define NOT not #10
 `define XOR xor #20
 
-module bitSlice_1bit (Out, Cout, A, B, Cin,Cntrl);
-  input A,B,Cin;
+module bitSlice_1bit (Out, Cout, A, B, negB, Cin,Cntrl);
+  input A,B,negB,Cin;
   input [2:0] Cntrl;
   output Out, Cout;
   
-  wire Xor, Add, Sub, Slt, Mul, notB;
-  
-  `NOT notBgate(notB,B);
+  wire Xor, Add, Sub, Slt, Mul;
   
   add_1bit add(Add,Cout,A,B,Cin);
   add_1bit sub(Sub,Cout,A,negB,Cin);
