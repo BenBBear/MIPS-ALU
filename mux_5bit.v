@@ -1,4 +1,5 @@
 //5 input mux
+//Ian Hoover and Derek Redfern
 //Olin College - CompArch
 
 `define AND and #20

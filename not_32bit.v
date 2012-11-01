@@ -1,3 +1,7 @@
+//32 bit not gate (bitwise)
+//Ian Hoover and Derek Redfern
+//Olin College - CompArch
+
 `define NOT not #10
 
 module not_32bit(out,in);

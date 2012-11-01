@@ -5,6 +5,7 @@
 `define OR or #20
 `define NOT not #10
 
+//It might make more sense to take [2:0] s as an input. Change later?
 module mux_5bit(muxOut, in0, in1, in2, in3, in4, s0, s1, s2);
   output muxOut;
   input in0, in1, in2, in3, in4, s0, s1, s2;

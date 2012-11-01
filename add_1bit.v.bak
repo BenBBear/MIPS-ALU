@@ -30,8 +30,8 @@ module TESTadd_1bit;
     #150 cIn=1;
     #150 A=1; 
   end
-  add_1bit UUT (A,B,cIn,out,cOut); 
+  add_1bit UUT (out,cOut,A,B,cIn); 
   initial  // Response 
-    $monitor($time,A,B,cIn,out,cOut);
+    $monitor($time,out,cOut,A,B,cIn);
 endmodule
 

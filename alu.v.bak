@@ -10,6 +10,4 @@ module alu(inA,inB,Ctrl,zero,overflow,Cout)
   output zero,overflow,Cout;
   
   //32 instances of bitSlice
-  
-  //Handle overflows and check for zero
 endmodule

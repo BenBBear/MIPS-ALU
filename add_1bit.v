@@ -1,4 +1,5 @@
 //1 bit adder
+//Ian Hoover and Derek Redfern
 //Olin College - CompArch
 
 `define AND and #20

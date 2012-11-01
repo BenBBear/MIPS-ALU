@@ -1,3 +1,7 @@
+//ALU bitslice for the MIPS architecture
+//Ian Hoover and Derek Redfern
+//Olin College - CompArch
+
 `define NOT not #10
 `define XOR xor #20
 
