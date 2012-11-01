@@ -18,7 +18,7 @@ module bitSlice_1bit (Out, Cout, A, B, Cin,Cntrl);
 
   `XOR xorGate(Xor,A,B);
   
-  mux_5bit finalMux(Out,Add,Sub,Xor,Slt,Mul,Cntrl[0],Cntrl[1],Cntrl[2]);
+  mux_5bit finalMux(Out,Add,Sub,Xor,Slt,Mul,Cntrl);
   
 endmodule
 
