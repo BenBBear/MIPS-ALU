@@ -17,8 +17,9 @@ module bitSlice_1bit (Out, Cout, A, B, Cin,Cntrl);
   add_1bit addOrSub(Sum,Cout,A,Bin,Cin);
 
   `XOR xorGate(Xor,A,B);
+  assign Sub = Sum;
   
-  mux_5bit finalMux(Out,Add,Sub,Xor,Slt,Mul,Cntrl);
+  mux_5bit finalMux(Out,Sum,Sub,Xor,Slt,Mul,Cntrl);
   
 endmodule
 
@@ -30,12 +31,12 @@ module TESTbitSlice_1bit;
   //test 1 bit adder
   initial  // Stimulus 
   begin
-    A=1;B=1;cIn=0; Cntrl = 0;
+    A=1;B=1;cIn=0; Cntrl = 1;
     #150 A=0; 
     #150 cIn=1;
     #150 A=1; 
   end
   bitSlice_1bit UUT (out,cOut,A,B,cIn,Cntrl); 
   initial  // Response 
-    $monitor($time,out,cOut,A,B,cIn);
+    $monitor($time, ,out,cOut, ,A,B,cIn, , Cntrl);
 endmodule

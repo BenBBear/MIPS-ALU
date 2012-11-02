@@ -8,8 +8,6 @@ entity mux_5bit is
         in2             : in     vl_logic;
         in3             : in     vl_logic;
         in4             : in     vl_logic;
-        s0              : in     vl_logic;
-        s1              : in     vl_logic;
-        s2              : in     vl_logic
+        s               : in     vl_logic_vector(2 downto 0)
     );
 end mux_5bit;
