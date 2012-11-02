@@ -10,14 +10,14 @@
 `define AND3 and #30
 `define NOT not #10
 
-module alu(A,B,FinalOut,Ctrl,zero,overflow,Cout);
+module alu(A,B,FinalOut,Ctrl,zero,overflow,CoutFinal);
   input [31:0] A;
   input [31:0] B;
   input [2:0] Ctrl;
   output [31:0] FinalOut;
-  output zero,overflow;
-  wire CoutFinal,notCtrl2,sltFlag;
-  output [31:0] Cout;
+  output zero,overflow,CoutFinal;
+  wire notCtrl2,sltFlag;
+  wire [31:0] Cout;
   wire [31:0] Out;
   
   //32 instances of bitSlice
@@ -104,7 +104,7 @@ module TESTalu;
   reg [31:0] B; 
   reg [2:0] Ctrl;
   wire zero,overflow;
-  wire [31:0] Cout; 
+  wire Cout; 
   wire [31:0] Out;
    
   //test alu
