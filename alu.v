@@ -59,3 +59,25 @@ module alu(A,B,Out,Ctrl,zero,overflow,CoutFinal);
                 Out[16],Out[17],Out[18],Out[19],Out[20],Out[21],Out[22],Out[23],
                 Out[24],Out[25],Out[26],Out[27],Out[28],Out[29],Out[30],Out[31]);
 endmodule
+
+module TESTalu;
+  reg [31:0] A;
+  reg [31:0] B; 
+  reg [2:0] Ctrl;
+  wire zero,overflow,Cout; 
+  wire [31:0] Out;
+   
+  //test alu
+  initial  // Stimulus 
+  begin 
+    A=4000000000;
+    B=4000000000;
+    Ctrl[2]=0; Ctrl[1]=0; Ctrl[0]=0; 
+    //#150 Ctrl[0]=0; 
+    //#150 Ctrl[1]=0;
+    //#150 Ctrl[2]=1; 
+  end 
+  alu UUT (A,B,Out,Ctrl,zero,overflow,Cout); 
+  initial  // Response 
+    $monitor($time,A,B,Out,Ctrl,zero,overflow,Cout);
+endmodule
