@@ -1,0 +1,11 @@
+#ignore everything
+*
+
+#whitelist .v files
+!*.v
+
+#and project files
+!*.mpf
+
+#and readme
+!*.md
