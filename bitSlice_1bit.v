@@ -10,15 +10,17 @@ module bitSlice_1bit (Out, Cout, A, B, Cin,Cntrl);
   input [2:0] Cntrl;
   output Out, Cout;
   
-  wire Xor, Sum, Slt, Mul, Bin; //Bin is the value fed to the adder (B or not(B))
+  wire Xor, Sum, Sub, Slt, Mul, Bin; //Bin is the value fed to the adder (B or not(B))
   
   `XOR subBgate(Bin,B,Cntrl[0]);
   
   add_1bit addOrSub(Sum,Cout,A,Bin,Cin);
 
   `XOR xorGate(Xor,A,B);
-  assign Sub = Sum;
   
+  assign Sub = Sum;
+  assign Slt = Sum;
+    
   mux_5bit finalMux(Out,Sum,Sub,Xor,Slt,Mul,Cntrl);
   
 endmodule

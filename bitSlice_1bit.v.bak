@@ -17,8 +17,8 @@ module bitSlice_1bit (Out, Cout, A, B, Cin,Cntrl);
   add_1bit addOrSub(Sum,Cout,A,Bin,Cin);
 
   `XOR xorGate(Xor,A,B);
-  assign Slt = 0;
-  assign Mul = 0;
+  assign Sub = Sum;
+  
   mux_5bit finalMux(Out,Sum,Sub,Xor,Slt,Mul,Cntrl);
   
 endmodule
