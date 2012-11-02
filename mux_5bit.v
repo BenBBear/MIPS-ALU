@@ -2,11 +2,10 @@
 //Ian Hoover and Derek Redfern
 //Olin College - CompArch
 
-`define AND and #20
-`define OR or #20
+`define AND4 and #40
+`define OR5 or #50
 `define NOT not #10
 
-//It might make more sense to take [2:0] s as an input. Change later?
 module mux_5bit(muxOut, in0, in1, in2, in3, in4, s);
   output muxOut;
   input in0, in1, in2, in3, in4;
@@ -16,12 +15,12 @@ module mux_5bit(muxOut, in0, in1, in2, in3, in4, s);
   `NOT nots0gate(nots0, s[0]);
   `NOT nots1gate(nots1, s[1]);
   `NOT nots2gate(nots2, s[2]);
-  `AND and0(andOut0,in0,nots2,nots1,nots0);
-  `AND and1(andOut1,in1,nots2,nots1,s[0]);
-  `AND and2(andOut2,in2,nots2,s[1],nots0);
-  `AND and3(andOut3,in3,nots2,s[1],s[0]);
-  `AND and4(andOut4,in4,s[2],nots1,nots0);
-  `OR finalOr(muxOut,andOut0,andOut1,andOut2,andOut3,andOut4);
+  `AND4 and0(andOut0,in0,nots2,nots1,nots0);
+  `AND4 and1(andOut1,in1,nots2,nots1,s[0]);
+  `AND4 and2(andOut2,in2,nots2,s[1],nots0);
+  `AND4 and3(andOut3,in3,nots2,s[1],s[0]);
+  `AND4 and4(andOut4,in4,s[2],nots1,nots0);
+  `OR5 finalOr(muxOut,andOut0,andOut1,andOut2,andOut3,andOut4);
 endmodule
 
 module TESTmux_5bit;
