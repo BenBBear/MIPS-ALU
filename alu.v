@@ -56,66 +56,170 @@ module alu(A,B,FinalOut,Ctrl,zero,overflow,CoutFinal);
 
   `NOT notCtrl2gate(notCtrl2,Ctrl[2]);
   `AND3 sltFlagGate(sltFlag,notCtrl2,Ctrl[1],Ctrl[0]);  
+  
+  wire zero;
+  assign zeroconst=0;
+
   mux_2bit sltMux0(FinalOut[0], Out[0], Out[31],sltFlag);
-  mux_2bit sltMux1(FinalOut[1], Out[1], 0,sltFlag);
-  mux_2bit sltMux2(FinalOut[2], Out[2], 0,sltFlag);
-  mux_2bit sltMux3(FinalOut[3], Out[3], 0,sltFlag);
-  mux_2bit sltMux4(FinalOut[4], Out[4], 0,sltFlag);
-  mux_2bit sltMux5(FinalOut[5], Out[5], 0,sltFlag);
-  mux_2bit sltMux6(FinalOut[6], Out[6], 0,sltFlag);
-  mux_2bit sltMux7(FinalOut[7], Out[7], 0,sltFlag);
-  mux_2bit sltMux8(FinalOut[8], Out[8], 0,sltFlag);
-  mux_2bit sltMux9(FinalOut[9], Out[9], 0,sltFlag);
-  mux_2bit sltMux10(FinalOut[10], Out[10], 0,sltFlag);
-  mux_2bit sltMux11(FinalOut[11], Out[11], 0,sltFlag);
-  mux_2bit sltMux12(FinalOut[12], Out[12], 0,sltFlag);
-  mux_2bit sltMux13(FinalOut[13], Out[13], 0,sltFlag);
-  mux_2bit sltMux14(FinalOut[14], Out[14], 0,sltFlag);
-  mux_2bit sltMux15(FinalOut[15], Out[15], 0,sltFlag);
-  mux_2bit sltMux16(FinalOut[16], Out[16], 0,sltFlag);
-  mux_2bit sltMux17(FinalOut[17], Out[17], 0,sltFlag);
-  mux_2bit sltMux18(FinalOut[18], Out[18], 0,sltFlag);
-  mux_2bit sltMux19(FinalOut[19], Out[19], 0,sltFlag);
-  mux_2bit sltMux20(FinalOut[20], Out[20], 0,sltFlag);
-  mux_2bit sltMux21(FinalOut[21], Out[21], 0,sltFlag);
-  mux_2bit sltMux22(FinalOut[22], Out[22], 0,sltFlag);
-  mux_2bit sltMux23(FinalOut[23], Out[23], 0,sltFlag);
-  mux_2bit sltMux24(FinalOut[24], Out[24], 0,sltFlag);
-  mux_2bit sltMux25(FinalOut[25], Out[25], 0,sltFlag);
-  mux_2bit sltMux26(FinalOut[26], Out[26], 0,sltFlag);
-  mux_2bit sltMux27(FinalOut[27], Out[27], 0,sltFlag);
-  mux_2bit sltMux28(FinalOut[28], Out[28], 0,sltFlag);
-  mux_2bit sltMux29(FinalOut[29], Out[29], 0,sltFlag);
-  mux_2bit sltMux30(FinalOut[30], Out[30], 0,sltFlag);
-  mux_2bit sltMux31(FinalOut[31], Out[31], 0,sltFlag);
+  mux_2bit sltMux1(FinalOut[1], Out[1], zeroconst,sltFlag);
+  mux_2bit sltMux2(FinalOut[2], Out[2], zeroconst,sltFlag);
+  mux_2bit sltMux3(FinalOut[3], Out[3], zeroconst,sltFlag);
+  mux_2bit sltMux4(FinalOut[4], Out[4], zeroconst,sltFlag);
+  mux_2bit sltMux5(FinalOut[5], Out[5], zeroconst,sltFlag);
+  mux_2bit sltMux6(FinalOut[6], Out[6], zeroconst,sltFlag);
+  mux_2bit sltMux7(FinalOut[7], Out[7], zeroconst,sltFlag);
+  mux_2bit sltMux8(FinalOut[8], Out[8], zeroconst,sltFlag);
+  mux_2bit sltMux9(FinalOut[9], Out[9], zeroconst,sltFlag);
+  mux_2bit sltMux10(FinalOut[10], Out[10], zeroconst,sltFlag);
+  mux_2bit sltMux11(FinalOut[11], Out[11], zeroconst,sltFlag);
+  mux_2bit sltMux12(FinalOut[12], Out[12], zeroconst,sltFlag);
+  mux_2bit sltMux13(FinalOut[13], Out[13], zeroconst,sltFlag);
+  mux_2bit sltMux14(FinalOut[14], Out[14], zeroconst,sltFlag);
+  mux_2bit sltMux15(FinalOut[15], Out[15], zeroconst,sltFlag);
+  mux_2bit sltMux16(FinalOut[16], Out[16], zeroconst,sltFlag);
+  mux_2bit sltMux17(FinalOut[17], Out[17], zeroconst,sltFlag);
+  mux_2bit sltMux18(FinalOut[18], Out[18], zeroconst,sltFlag);
+  mux_2bit sltMux19(FinalOut[19], Out[19], zeroconst,sltFlag);
+  mux_2bit sltMux20(FinalOut[20], Out[20], zeroconst,sltFlag);
+  mux_2bit sltMux21(FinalOut[21], Out[21], zeroconst,sltFlag);
+  mux_2bit sltMux22(FinalOut[22], Out[22], zeroconst,sltFlag);
+  mux_2bit sltMux23(FinalOut[23], Out[23], zeroconst,sltFlag);
+  mux_2bit sltMux24(FinalOut[24], Out[24], zeroconst,sltFlag);
+  mux_2bit sltMux25(FinalOut[25], Out[25], zeroconst,sltFlag);
+  mux_2bit sltMux26(FinalOut[26], Out[26], zeroconst,sltFlag);
+  mux_2bit sltMux27(FinalOut[27], Out[27], zeroconst,sltFlag);
+  mux_2bit sltMux28(FinalOut[28], Out[28], zeroconst,sltFlag);
+  mux_2bit sltMux29(FinalOut[29], Out[29], zeroconst,sltFlag);
+  mux_2bit sltMux30(FinalOut[30], Out[30], zeroconst,sltFlag);
+  mux_2bit sltMux31(FinalOut[31], Out[31], zeroconst,sltFlag);
   
   //Handle overflows and check for zero
   `XOR overflowXor(overflow,Cout[30],Cout[31]); //set overflow to true if last two Cout bits differ
   `BUF coutBuf(CoutFinal,Cout[31]); //set CoutFinal to value of last Cout
   //set zero to 1 if all of the Out bits are 0
-  `NOR32 norZero(zero,Out[0],Out[1],Out[2],Out[3],Out[4],Out[5],Out[6],Out[7],
-                Out[8],Out[9],Out[10],Out[11],Out[12],Out[13],Out[14],Out[15],
-                Out[16],Out[17],Out[18],Out[19],Out[20],Out[21],Out[22],Out[23],
-                Out[24],Out[25],Out[26],Out[27],Out[28],Out[29],Out[30],Out[31]);
+  `NOR32 norZero(zero,FinalOut[0],FinalOut[1],FinalOut[2],FinalOut[3],FinalOut[4],FinalOut[5],
+                FinalOut[6],FinalOut[7],FinalOut[8],FinalOut[9],FinalOut[10],FinalOut[11],
+                FinalOut[12],FinalOut[13],FinalOut[14],FinalOut[15],FinalOut[16],FinalOut[17],
+                FinalOut[18],FinalOut[19],FinalOut[20],FinalOut[21],FinalOut[22],FinalOut[23],
+                FinalOut[24],FinalOut[25],FinalOut[26],FinalOut[27],FinalOut[28],FinalOut[29],
+                FinalOut[30],FinalOut[31]);
 endmodule
 
 module TESTalu;
   reg [31:0] A;
   reg [31:0] B; 
   reg [2:0] Ctrl;
+  reg flag;
   wire zero,overflow;
   wire Cout; 
   wire [31:0] Out;
    
   //test alu
   initial  // Stimulus 
-  begin 
-    A=2;
-    B=5;
-    Ctrl[2]=0; Ctrl[1]=1; Ctrl[0]=1; 
-    //#150 Ctrl[0]=0; 
-    //#150 Ctrl[1]=0;
-    //#150 Ctrl[2]=1; 
+  begin
+    flag=1; //flag is 1 if all tests succeed; 0 otherwise
+    
+    //ADD TESTS
+    Ctrl[2]=0; Ctrl[1]=0; Ctrl[0]=0; //set control code to ADD
+    A=2; B=5; //example ADD
+    #500 
+    if (Out!=7)
+      flag=0;
+    A=2000000000; B=2000000000; //overflow ADD
+    #500
+    if (overflow!=1)
+      flag=0;
+    A=2; B=-5; //negative number ADD
+    #500 
+    if (Out!=-3)
+      flag=0;
+    A=12345678; B=87654321; //large number ADD
+    #500 
+    if (Out!=99999999)
+      flag=0;
+    A=10; B=-10; //zero result ADD
+    #1700 
+    if (zero!=1 || Out!=0)
+      flag=0;
+
+    //SUB TESTS
+    Ctrl[2]=0; Ctrl[1]=0; Ctrl[0]=1; //set control code to SUB
+    A=2; B=5; //example SUB
+    #1700 
+    if (Out!=-3)
+      flag=0;
+    A=2000000000; B=-2000000000; //overflow SUB
+    #500
+    if (overflow!=1)
+      flag=0;
+    A=-2000000000; B=2000000000; //underflow SUB
+    #500
+    if (overflow!=1)
+      flag=0;
+    A=-2; B=5; //negative number SUB
+    #500 
+    if (Out!=-7)
+      flag=0;
+    A=23456789;B=11111111; //large number SUB
+    #500 
+    if (Out!=12345678)
+      flag=0;
+    A=10; B=10; //zero result SUB
+    #1700 
+    if (zero!=1 || Out!=0)
+      flag=0;
+      
+    //XOR TESTS
+    Ctrl[2]=0; Ctrl[1]=1; Ctrl[0]=0; //set control code to XOR
+    A='b10000000000000000000000000001010;
+    B='b00000000000000000000000000001100;
+    //test each possible XOR pairing with only one test
+    //also test timing by placing one nonzero pair in the last spot
+    #500 
+    if (Out!='b10000000000000000000000000000110)
+      flag=0;
+    
+    //SLT TESTS
+    Ctrl[2]=0; Ctrl[1]=1; Ctrl[0]=1; //set control code to SLT
+    A=2; B=9; //A < B SLT
+    #1800 
+    if (Out!=1)
+      flag=0;
+    A=10; B=10; //A = B SLT
+    #1800 
+    if (zero!=1 || Out!=0)
+      flag=0;
+    A=10; B=5; //A > B SLT
+    #1800 
+    if (zero!=1 || Out!=0)
+      flag=0;
+    A=2000000000; B=-2000000000; //overflow SLT
+    #1800
+    if (overflow!=1)
+      flag=0;
+    
+    //uncomment after implementing MUL
+    /*
+    //MUL TESTS
+    Ctrl[2]=1; Ctrl[1]=0; Ctrl[0]=0; //set control code to MUL
+    A=2; B=5; //example MUL
+    #5000 //change timing once known
+    if (Out!=10)
+      flag=0;
+    A=6; B=-3; //example MUL
+    #5000 //change timing once known
+    if (Out!=-18)
+      flag=0;
+    A=200000; B=200000; //overflow MUL
+    #5000 //change timing once known
+    if (overflow!=1)
+      flag=0;*/
+      
+    if (flag==1)
+      $display("All tests passed!");
+    else
+      $display("One or more tests failed.");
+      
   end 
   alu UUT (A,B,Out,Ctrl,zero,overflow,Cout);
   initial  // Response
