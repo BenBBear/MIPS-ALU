@@ -96,7 +96,6 @@ module alu(A,B,FinalOut,Ctrl,zero,overflow,CoutFinal);
   `NOT notCtrl2gate(notCtrl2,Ctrl[2]);
   `AND3 sltFlagGate(sltFlag,notCtrl2,Ctrl[1],Ctrl[0]);  
   
-  wire zero;
   assign zeroconst=0;
 
   mux_2bit sltMux0(FinalOut[0], Out[0], Out[31],sltFlag);
@@ -169,7 +168,7 @@ module TESTalu;
     if (overflow!=1)
       flag=0;
     A=2; B=-5; //negative number ADD
-    #500 
+    #800 
     if (Out!=-3)
       flag=0;
     A=12345678; B=87654321; //large number ADD
@@ -237,27 +236,20 @@ module TESTalu;
     if (overflow!=1)
       flag=0;
     
-    //uncomment after implementing MUL
-    
     //MUL TESTS
     Ctrl[2]=1; Ctrl[1]=0; Ctrl[0]=0; //set control code to MUL
     A=2; B=5; //example MUL
-    #100000 //change timing once known
+    #10000 //change timing once known
     if (Out!=10)
       flag=0;
-    A=6; B=-3; //example MUL
-    #100000 //change timing once known
+    A=6; B=-3; //negative input MUL
+    #10000 //change timing once known
     if (Out!=-18)
       flag=0;
-    A=10000; B=30000; //example MUL
-    #100000 //change timing once known
+    A=10000; B=30000; //large inputs MUL
+    #10000 //change timing once known
     if (Out!=300000000)
       flag=0;
-    
-    A=200000; B=200000; //overflow MUL
-    #100000 //change timing once known
-    //if (overflow!=1)
-      //flag=0;
       
     if (flag==1)
       $display("All tests passed!");

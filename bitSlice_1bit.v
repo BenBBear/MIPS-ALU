@@ -30,7 +30,7 @@ module bitSlice_1bit (Out, Cout, cOutM, A, B, A32, B32, Cin, cInM,Cntrl);
   assign Slt = Sum;
   
   //do the multiply!!
-  AND and0Gate (and0,A32[0],B32[31]);
+  `AND and0Gate (and0,A32[0],B32[31]);
   `AND and1Gate (and1,A32[1],B32[30]);
   `AND and2Gate (and2,A32[2],B32[29]);
   `AND and3Gate (and3,A32[3],B32[28]);
